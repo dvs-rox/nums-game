@@ -13,6 +13,7 @@
     font-size: 15px;
 }
 body {
+    color: black;
     background-color: black;
     background-image: url('../img/woods.png');
     background-position:center;
