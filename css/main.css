@@ -1,0 +1,103 @@
+/* imports for fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Source+Code+Pro&display=swap');
+
+.inputs{
+    box-shadow: -5px 4px rgb(55, 102, 97, .9);
+    background-color: rgba(88, 129, 87, .99);
+    opacity: 100%;
+    margin: 0%;
+    border: 5px solid rgba(156, 216, 231, .4);
+    font-family: 'Permanent Marker', cursive;
+    font-size: 15px;
+}
+body {
+    background-color: black;
+    background-image: url('../img/woods.png');
+    background-position:center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+}
+.gameTable {
+    background-image: url('../img/jungle.gif');
+    background-position: center;
+    background-size:cover;
+    margin: auto;
+    margin-top: 100px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.gameTable td {
+    box-shadow: -5px 4px rgb(55, 102, 97, .9);
+    background-color: rgba(88, 129, 87, .85);
+    opacity: 100%;
+    padding: 10px;
+    border: 5px solid rgba(156, 216, 231, .4);
+    width: 40px;
+    height: 40px;
+    padding-inline: 18px;
+
+}
+.gameTable tr {
+    text-align: center;
+}
+.difficulty {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 25px;
+}
+
+.timer {
+    width:100%;
+    text-align: left;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
+
+.gridCell {
+    size:20px;
+    font-size: 35px;
+    font-family: 'Shadows Into Light', cursive;
+    cursor: pointer;
+    user-select: none;
+}
+.gridCell:hover{
+    background-color: rgba(231, 156, 231, 0.65);
+    size-adjust: 30%;
+    transition: 100ms;
+}
+.gameTable span {
+    pointer-events: auto;
+    cursor: inherit
+}
+.nextNum{
+    width:100%;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
+
+.clicked {
+    background-color: transparent;
+    color: white;
+    pointer-events: none;
+}
+
+.error {
+    background-color: red;
+    color: white;
+    animation: shake 0.2s; 
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
